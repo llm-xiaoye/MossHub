@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "sites": {
+    "docs.python.org": {
+      "page_hosts": [
+        "docs.python.org"
+      ],
+      "render_hosts": [
+        "docs.python.org"
+      ],
+      "image_hosts": [
+        "docs.python.org"
+      ],
+      "body_selector": ".body",
+      "wait_for": "css:.body"
+    },
+    "www.sqlite.org": {
+      "page_hosts": [
+        "www.sqlite.org"
+      ],
+      "render_hosts": [
+        "www.sqlite.org"
+      ],
+      "image_hosts": [
+        "www.sqlite.org"
+      ],
+      "body_selector": "body",
+      "wait_for": "css:body"
+    },
+    "www.postgresql.org": {
+      "page_hosts": [
+        "www.postgresql.org"
+      ],
+      "render_hosts": [
+        "www.postgresql.org"
+      ],
+      "image_hosts": [
+        "www.postgresql.org"
+      ],
+      "body_selector": "#INTRO-WHATIS",
+      "wait_for": "css:#INTRO-WHATIS"
+    },
+    "nginx.org": {
+      "page_hosts": [
+        "nginx.org"
+      ],
+      "render_hosts": [
+        "nginx.org"
+      ],
+      "image_hosts": [
+        "nginx.org"
+      ],
+      "body_selector": "#content",
+      "wait_for": "css:#content"
+    },
+    "redis.io": {
+      "page_hosts": [
+        "redis.io"
+      ],
+      "render_hosts": [
+        "redis.io"
+      ],
+      "image_hosts": [
+        "redis.io"
+      ],
+      "body_selector": "section.prose",
+      "wait_for": "css:section.prose",
+      "verified_ui_resources": [
+        {
+          "kind": "svg",
+          "content_sha256": "7cc9a1b61b67fdb8872081b377009c63d8da7374722f28c9e08344b57dc5a030",
+          "context": "REDIS_COMMAND_GROUP",
+          "review_ref": "web-ui-controls-20261019/UI01; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "fa87a96d959ce02152eeba4189960e717e059044fa90dd05664efe8e26c08736",
+          "context": "REDIS_TRY",
+          "review_ref": "web-ui-controls-20261019/UI02; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "bea56185a542166533b4161e0ba41feb3fd2fd62b19f735236190d5d2dfa24ed",
+          "context": "REDIS_OUTPUT",
+          "review_ref": "web-ui-controls-20261019/UI03; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "41b771eb151804121cb85773f28fd1fe3ea50a36a05a64ca8021c6273db5a845",
+          "context": "REDIS_COPY_LINK",
+          "review_ref": "web-ui-controls-20261019/UI04; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "8630d570f3fd2ac3d8e54631b5588dbf888fb81bbae6736451240600443d0818",
+          "context": "REDIS_VISIBILITY",
+          "review_ref": "web-ui-controls-20261019/UI05; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "4f8ea506cb650a36856942545aa346ee77e553ca0c8581470671c665238d8a7a",
+          "context": "REDIS_VISIBILITY",
+          "review_ref": "web-ui-controls-20261019/UI06; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "600e1f56abe5673095af3c258d8b618be5a59ccd209aaacd6afe93cdfd76a83c",
+          "context": "REDIS_COPY",
+          "review_ref": "web-ui-controls-20261019/UI07; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "svg",
+          "content_sha256": "9c688b865fcef717335b39b659198c101933d5ea7b7636603055b66718a723d2",
+          "context": "REDIS_HEADING_ANCHOR",
+          "review_ref": "web-ui-controls-20261019/UI08; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "css-background",
+          "content_sha256": "603cfe92ec1d7899da9572e981d5d7cb4cbaa9658d797cc07357198998e43d5d",
+          "context": "REDIS_LANGUAGE_SELECT",
+          "review_ref": "web-ui-controls-20261019/UI09; static-icons-02 and frozen DOM"
+        }
+      ]
+    },
+    "fastapi.tiangolo.com": {
+      "page_hosts": [
+        "fastapi.tiangolo.com"
+      ],
+      "render_hosts": [
+        "fastapi.tiangolo.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "image_hosts": [
+        "fastapi.tiangolo.com"
+      ],
+      "body_selector": "article.md-content__inner",
+      "wait_for": "css:article.md-content__inner",
+      "verified_ui_resources": [
+        {
+          "kind": "css-background",
+          "content_sha256": "15c88b1e446e89adf8481e8de4e36528a4b495b3428a9f38f41d19037b2e95b9",
+          "context": "FASTAPI_TABS_SCROLL",
+          "review_ref": "web-ui-controls-20261019/UI10; static-icons-02 and frozen DOM"
+        },
+        {
+          "kind": "css-background",
+          "content_sha256": "e0e9b6599e818fc12bf865a20119ed137f9bd27fbf0e278e3cd3d242fa06fd68",
+          "context": "FASTAPI_TABS_SCROLL",
+          "review_ref": "web-ui-controls-20261019/UI11; static-icons-02 and frozen DOM"
+        }
+      ]
+    },
+    "mp.weixin.qq.com": {
+      "page_hosts": [
+        "mp.weixin.qq.com"
+      ],
+      "render_hosts": [
+        "mp.weixin.qq.com",
+        "res.wx.qq.com",
+        "mmbiz.qpic.cn",
+        "mpcdn.qpic.cn",
+        "mpcdn.weixin.qq.com",
+        "wxa.wxs.qq.com",
+        "file.daihuo.qq.com"
+      ],
+      "image_hosts": [
+        "mmbiz.qpic.cn",
+        "mpcdn.qpic.cn",
+        "mp.weixin.qq.com"
+      ],
+      "body_selector": "#js_content",
+      "wait_for": "css:#js_content"
+    }
+  }
+}

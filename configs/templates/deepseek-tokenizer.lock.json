@@ -1,0 +1,33 @@
+{
+  "archive": {
+    "path": "@RAG_HOME@/models/deepseek-v4-tokenizer-20261002.zip",
+    "sha256": "e7310d1dafe0a86d8a5629fe78a7c763760f651db9b8682718a1781dcd6fe495",
+    "size_bytes": 1911504
+  },
+  "cloud_usage_calibrated": false,
+  "counting": {
+    "add_special_tokens": true,
+    "budget": 8000,
+    "truncation": false,
+    "whole_serialized_evidence": true
+  },
+  "dependencies": {
+    "tokenizers": "0.23.2",
+    "transformers": "5.18.0"
+  },
+  "directory": "@RAG_HOME@/models/tokenizer/deepseek-v4-20261002",
+  "files": [
+    {
+      "path": "tokenizer.json",
+      "sha256": "89085f12ef79460ac5f66d1119325ddfc694b4ab209d80bbd81d35f081dc9614",
+      "size_bytes": 6367096
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "841f8cf146e3f0ad1082594a31f68ecf7608c20467ef355081333d85bbaeb1cb",
+      "size_bytes": 3128
+    }
+  ],
+  "schema": "raghub.deepseek-tokenizer.v1",
+  "source_url": "https://cdn.deepseek.com/api-docs/deepseek_v4_tokenizer.zip"
+}

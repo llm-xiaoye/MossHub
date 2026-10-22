@@ -1,0 +1,41 @@
+# Private configuration and local state
+.env
+.env.*
+!.env.example
+private/
+data/
+logs/
+cache/
+models/
+runtime/
+tmp/
+obsidian/
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.pem
+*.key
+# Generated machine-local resource locks
+configs/parsing/models.lock.json
+configs/services/deepseek-tokenizer.lock.json
+# Build and developer environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+frontend/dist/
+.DS_Store
+coverage/
+htmlcov/
+
+# Optional private integration settings
+configs/douyin.json
+configs/douyin-rag.json
+*.env
+!*.env.example
+

@@ -1,0 +1,39 @@
+.knowledge-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #70f5b4;
+  pointer-events: none;
+  vertical-align: middle;
+}
+.knowledge-mark svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.knowledge-mark__ring, .knowledge-mark__center {
+  transform-box: view-box;
+  transform-origin: 50% 50%;
+}
+.knowledge-mark.is-active .knowledge-mark__ring--outer {
+  animation: moss-ring-turn 10s linear infinite;
+}
+.knowledge-mark.is-active .knowledge-mark__ring--middle {
+  animation: moss-ring-turn 8s linear infinite reverse;
+}
+.knowledge-mark.is-active .knowledge-mark__ring--inner {
+  animation: moss-ring-turn 6s linear infinite;
+}
+.knowledge-mark.is-active .knowledge-mark__ring--heart {
+  animation: moss-ring-turn 5s linear infinite reverse;
+}
+.knowledge-mark.is-active .knowledge-mark__center {
+  animation: moss-core-breathe 1.8s ease-in-out infinite;
+}
+@keyframes moss-ring-turn { to { transform: rotate(360deg); } }
+@keyframes moss-core-breathe {
+  0%, 100% { opacity: .65; transform: scale(.85); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .knowledge-mark.is-active .knowledge-mark__ring,
+  .knowledge-mark.is-active .knowledge-mark__center { animation: none !important; }
+  .knowledge-mark.is-active { color: #a5ffd2; }
+}

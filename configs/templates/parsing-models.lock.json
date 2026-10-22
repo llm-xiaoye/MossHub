@@ -1,0 +1,133 @@
+{
+  "files": [
+    {
+      "path": "docling-project--docling-layout-heron/config.json",
+      "sha256": "fdea30805ce2f5666b147fca941dcdd27ad468e27d6ed21902207d3da056a97d",
+      "size_bytes": 3268
+    },
+    {
+      "path": "docling-project--docling-layout-heron/model.safetensors",
+      "sha256": "00333a43451945aaf89db8ca9c0a17e75d1537c17db60fdb91aa95f4c7929e0c",
+      "size_bytes": 171658996
+    },
+    {
+      "path": "docling-project--docling-layout-heron/preprocessor_config.json",
+      "sha256": "cd38cd59999e7a95d68e487fbe5132df3d4e5c32a0836add57e6126ba0c4eaf1",
+      "size_bytes": 444
+    },
+    {
+      "path": "docling-project--docling-models/model_artifacts/tableformer/accurate/tableformer_accurate.safetensors",
+      "sha256": "2a7d6c924b3cd12fb99a09280ca9c33a89c5d60b93253617d2e088c1a40374d9",
+      "size_bytes": 212758388
+    },
+    {
+      "path": "docling-project--docling-models/model_artifacts/tableformer/accurate/tm_config.json",
+      "sha256": "984e122ceb8ccf84d84c9d2882f6f2302a44b4f1e577babd6289892c36f3cffd",
+      "size_bytes": 7060
+    },
+    {
+      "path": "docling-project--docling-models/model_artifacts/tableformer/fast/tableformer_fast.safetensors",
+      "sha256": "3119563aab5a7c96fda4d621119b63fd8806272b86c30936d15507616422f718",
+      "size_bytes": 145453276
+    },
+    {
+      "path": "docling-project--docling-models/model_artifacts/tableformer/fast/tm_config.json",
+      "sha256": "dca6762508dddfae6d57d6cb4ef822c6000119dff0f3b6489db7413118c2622a",
+      "size_bytes": 7060
+    },
+    {
+      "path": "ocr/PP-OCRv6_det_small.onnx",
+      "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+      "size_bytes": 9929594
+    },
+    {
+      "path": "ocr/PP-OCRv6_rec_small.onnx",
+      "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884",
+      "size_bytes": 21234383
+    },
+    {
+      "path": "ocr/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "size_bytes": 585532
+    },
+    {
+      "path": "ocr/recognizer-metadata.json",
+      "sha256": "d2512fbd7bd4dfdf5b028c765e15ee45bce98f60512ee042899bc0ee3d1632a8",
+      "size_bytes": 93672
+    }
+  ],
+  "ocr": {
+    "cls": {
+      "catalog_sha256": "db47df9d6b071721f1633667b41cfef1e40b5d7f09be030aaea8be801ca2f2f5",
+      "catalog_url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.9.2/onnx/PP-OCRv4/cls/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "model_type": "mobile",
+      "path": "ocr/ch_ppocr_mobile_v2.0_cls_mobile.onnx",
+      "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "size_bytes": 585532,
+      "version": "PP-OCRv4"
+    },
+    "det": {
+      "catalog_sha256": "db47df9d6b071721f1633667b41cfef1e40b5d7f09be030aaea8be801ca2f2f5",
+      "catalog_url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.9.2/onnx/PP-OCRv6/det/PP-OCRv6_det_small.onnx",
+      "model_type": "small",
+      "path": "ocr/PP-OCRv6_det_small.onnx",
+      "sha256": "090f04abcd9d9a7498bc4ebf677e4cb9bdce1fe4197ddb7e529f1ef44e1ff94f",
+      "size_bytes": 9929594,
+      "version": "PP-OCRv6"
+    },
+    "rec": {
+      "catalog_sha256": "db47df9d6b071721f1633667b41cfef1e40b5d7f09be030aaea8be801ca2f2f5",
+      "catalog_url": "https://www.modelscope.cn/models/RapidAI/RapidOCR/resolve/v3.9.2/onnx/PP-OCRv6/rec/PP-OCRv6_rec_small.onnx",
+      "embedded_metadata": {
+        "keys": [
+          "character"
+        ],
+        "path": "ocr/recognizer-metadata.json",
+        "sha256": "d2512fbd7bd4dfdf5b028c765e15ee45bce98f60512ee042899bc0ee3d1632a8"
+      },
+      "model_type": "small",
+      "path": "ocr/PP-OCRv6_rec_small.onnx",
+      "sha256": "6f327246b50388f3c176ae304bd95767ea6dc0c9ae92153ef8cbe210b3c14884",
+      "size_bytes": 21234383,
+      "version": "PP-OCRv6"
+    }
+  },
+  "packages": {
+    "docling": "2.131.0",
+    "docling-core": "2.99.0",
+    "docling-ibm-models": "4.0.3",
+    "onnxruntime": "1.30.0",
+    "rapidocr": "3.9.2",
+    "torch": "2.14.1",
+    "transformers": "5.18.0"
+  },
+  "repositories": [
+    {
+      "relative_root": "docling-project--docling-layout-heron",
+      "repo_id": "docling-project/docling-layout-heron",
+      "requested_revision": "main",
+      "resolved_revision": "8f39ad3c0b4c58e9c2d2c84a38465abf757272d8",
+      "role": "layout",
+      "selected_members": [
+        "config.json",
+        "model.safetensors",
+        "preprocessor_config.json"
+      ]
+    },
+    {
+      "relative_root": "docling-project--docling-models",
+      "repo_id": "docling-project/docling-models",
+      "requested_revision": "v2.3.0",
+      "resolved_revision": "fc0f2d45e2218ea24bce5045f58a389aed16dc23",
+      "role": "tableformer",
+      "selected_members": [
+        "model_artifacts/tableformer/accurate/tableformer_accurate.safetensors",
+        "model_artifacts/tableformer/accurate/tm_config.json",
+        "model_artifacts/tableformer/fast/tableformer_fast.safetensors",
+        "model_artifacts/tableformer/fast/tm_config.json"
+      ]
+    }
+  ],
+  "root": "@RAG_HOME@/models/parsing-20261001-01",
+  "schema": "raghub.parsing-models.v1"
+}
